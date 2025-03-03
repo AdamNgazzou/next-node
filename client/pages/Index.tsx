@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-function index() {
+function Index() {
 
   const [message, setMessage] = useState("Loading")
   const [people, setPeople] = useState([]);
@@ -30,4 +30,4 @@ function index() {
   )
 }
 
-export default index
+export default Index
