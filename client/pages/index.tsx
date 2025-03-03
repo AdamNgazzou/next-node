@@ -6,7 +6,7 @@ function index() {
   const [people, setPeople] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:8080/api/home").then(
+    fetch(`${process.env.BACKEND_URL}/api/home`).then(
       response => response.json()
     ).then(
       data => {
